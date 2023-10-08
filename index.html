@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan</title>
+</head>
+<body>
+    <h1>Contoh If..else</h1>
+    <script>
+        var totalPengeluaran = prompt("Total Pengeluaran?", 0);
+
+        if(totalPengeluaran > 100000){
+            document.write("<h2>Pengeluaran Anda Telah Melampaui Batas Sebagai Anak Kost</h2>");
+        }
+            document.write("<h2>Silahkan mengemis lagi</p>");
+        
+                var password = prompt("Password:");
+
+        if(password == "orangsawah"){
+           document.write("<h2>Selamat datang bos!</h2>");
+        } else {
+           document.write("<p>Password salah, coba lagi!</p>");
+        }
+          document.write("<p>Terima kasih sudah menggunakan aplikasi ini!</p>");
+
+    </script> 
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Contoh Nested if</h1>
+    <script>
+        var nilai = prompt("Input nilai akhir Semester 6:");
+        var grade = "";
+
+        if(nilai >= 90) grade = "A"
+        else if(nilai >= 80) grade = "A"
+        else if(nilai >= 70) grade = "A"
+        else if(nilai >= 60) grade = "A-"
+        else if(nilai >= 50) grade = "B+"
+        else if(nilai >= 40) grade = "A"
+        else if(nilai >= 30) grade = "B-"
+        else grade = "F";
+
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Contoh Switch Case</h1>
+    <script>
+         var jawab = prompt("Kamu beruntung! Silahkan pilih hadiahmu dengan memasukan angka 1 sampai 5");
+        var hadiah = "";
+        
+        switch(jawab){
+            case "1":
+                hadiah = "Scopy";
+                break;
+            case "2":
+                hadiah = "Honda HRV";
+                break;
+            case "3":
+                hadiah = "Voucher Umroh";
+                break;
+            case "4":
+                hadiah = "Sertifikat Tanah";
+                break;
+            case "5":
+                hadiah = "Rumah 2 lantai";
+                break;
+            default:
+                document.write("<p>Opps! anda salah pilih</p>");
+        }
+
+        if(hadiah === ""){
+            document.write("<p>Kamu gagal mendapat hadiah,kasian</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Contoh For Statement</h1>
+    <script>
+        // program to display text 5 times
+        const n = 5;
+
+        // looping from i = 1 to 5
+            for (let i = 1; i <= n; i++) {
+             document.write("<h2>Aku sayang Kamu</h2>");
+            }
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Contoh While, Do While</h1>
+    <script>
+            var ulangi = confirm("Apakah anda mau mengulang?");
+            var counter = 5;
+
+            while(ulangi){
+            counter++;
+          ulangi = confirm("Apakah anda mau mengulang?");
+            }
+
+            document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Contoh function</h1>
+    <fieldset>
+        <legend>Input Form</legend>
+        <input type="text" name="barang" placeholder="input nama barang..." />
+        <input type="button" onclick="addBarang()" value="Tambah" />
+    </fieldset>
+
+    <div>
+        <ul id="list-barang">
+        </ul>
+    </div>
+
+    <script src="fungsi.js"></script>
+</body>
+</html>
